@@ -72,7 +72,7 @@ Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worshi
 | Problema               | Solución                                                                 |
 |------------------------|--------------------------------------------------------------------------|
 | **Plugins no detectados** | Revisa `Opciones > Preferencias > Plugins > VST` y añade `Reaper\Plugins\FX\UserPlugins` manualmente. |
-| **Ruido/feedback**      | Mantén el volumen de entrada en Windows ≤10% recomendablemente 1% y ajusta ganancia en REAPER SOLO SI EN CASO DE SER NECESARIO. |
+| **Ruido/feedback**      | Mantén el volumen de entrada en Windows ≤10% recomendablemente 1% y ajusta ganancia en REAPER SOLO EN CASO DE SER NECESARIO. |
 | **Latencia alta**       | Usa ASIO4ALL con buffer ≤256 muestras. Cierra navegadores/antivirus.     |
 
 ---
