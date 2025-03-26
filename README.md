@@ -2,6 +2,9 @@
 
 Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worship/iglesias). Incluye routing avanzado, efectos y soporte para tarjetas de audio integradas.
 
+![screenshot1](https://github.com/llromerorr/control-de-audio-iglesia/blob/87e4ada81bd2e3ff7bbf13c63bfc9442ac19cf7d/screenshots/screenshot1.PNG)
+![screenshot1](https://github.com/llromerorr/control-de-audio-iglesia/blob/87e4ada81bd2e3ff7bbf13c63bfc9442ac19cf7d/screenshots/screenshot2.PNG)
+
 ---
 
 ## 📥 Descarga e Instalación
