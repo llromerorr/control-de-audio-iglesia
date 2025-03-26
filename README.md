@@ -10,14 +10,14 @@ Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worshi
 ## 📥 Descarga e Instalación
 
 1. **Descargar el archivo portable**:
-   - Ve a la sección [Releases](https://github.com/tu-usuario/tu-repositorio/releases) del repositorio.
+   - Ve a la sección [Releases](https://github.com/llromerorr/control-de-audio-iglesia/releases) del repositorio.
    - Descarga el archivo `reaper.zip` que incluye:
      - REAPER en versión portable (no requiere instalación).
      - Plugins/VST esenciales preconfigurados.
      - Carpeta `¡¡INSTALADORES!!` con herramientas adicionales.
 
 2. **Extraer el archivo**:
-   - Descomprime `reaper.zip` en una carpeta de tu elección (ej. `C:\ReaperPortable`).
+   - Descomprime `reaper.zip` en una carpeta de tu elección.
 
 3. **Instalar dependencias** (opcional pero recomendado):
    - Abre la carpeta `¡¡INSTALADORES!!` y ejecuta:
