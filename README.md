@@ -6,23 +6,22 @@ Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worshi
 
 ## 📥 Descarga e Instalación
 
-1. **Descargar**:
-   - Obtén el archivo portable desde [Releases](https://github.com/llromerorr/control-de-audio-iglesia/releases).
-   - Contenido del ZIP:
-     - REAPER portable (sin instalación).
-     - Plugins/VST preconfigurados en `Reaper\Plugins\FX\UserPlugins` (detectados automáticamente al abrir el proyecto*).
-     - Carpeta `¡¡INSTALADORES!!` con herramientas esenciales.
+1. **Descargar el archivo portable**:
+   - Ve a la sección [Releases](https://github.com/tu-usuario/tu-repositorio/releases) del repositorio.
+   - Descarga el archivo `reaper.zip` que incluye:
+     - REAPER en versión portable (no requiere instalación).
+     - Plugins/VST esenciales preconfigurados.
+     - Carpeta `¡¡INSTALADORES!!` con herramientas adicionales.
 
-2. **Extraer**:
-   - Descomprime en `C:\ReaperPortable` o similar.
+2. **Extraer el archivo**:
+   - Descomprime `reaper.zip` en una carpeta de tu elección (ej. `C:\ReaperPortable`).
 
-3. **Dependencias** (recomendado):
-   - Instala desde `¡¡INSTALADORES!!`:
-     - **ASIO4ALL**: Para baja latencia.
-     - **SWS Extension**: Funcionalidades extendidas.
-     - **Optimizer**: Ajustes de sistema para audio en tiempo real.
-
-> *Nota: Aunque REAPER no recomienda colocar plugins en `UserPlugins`, esta configuración garantiza que se detecten automáticamente para usuarios sin experiencia.
+3. **Instalar dependencias** (opcional pero recomendado):
+   - Abre la carpeta `¡¡INSTALADORES!!` y ejecuta:
+     - `ASIO4ALL_2_16.exe`: Para baja latencia de audio (esencial si usas la tarjeta de audio integrada).
+     - `vcredist\*.exe`: Redistribuibles de Visual C++ (requeridos por algunos plugins).
+     - `sws-2.14.0.3-Windows-x64.exe`: Extiende funcionalidades de REAPER.
+     - `Optimizer-16.7.exe`: Optimiza el sistema para audio en tiempo real.
 
 ---
 
@@ -45,26 +44,23 @@ Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worshi
 
 ## 🎹 Estructura del Proyecto
 
-| Canal       | Descripción                                                                 |
-|-------------|-----------------------------------------------------------------------------|
-| **Voz**     | Procesamiento avanzado (de-esser, compresor multibanda).                   |
-| **Guitarra**| Incluye amp simulación (Ignite Amps) y delay sincronizado.                 |
-| **Reverb**  | Efecto compartido (Valhalla Supermassive).                                 |
-| **Bajo**    | Virtual (Ample Bass P Lite II) con splits MIDI (C1-E3 para bajo+piano).    |
-| **Pads**    | Capas de órgano (Surge XT) y coros (LABS Soft Piano).                      |
+### Canales principales
+| Canal         | Descripción                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| **LEFT**      | Entrada de voces (ecualización y compresión dedicada).                     |
+| **RIGHT**     | Entrada de guitarra (limpia o con distorsión).                             |
+| **Reverb**    | Efecto de reverberación compartida para todos los instrumentos.            |
+| **Voz**       | Procesamiento avanzado para voces (EQ, compresor, limitador).              |
+| **Bass**      | Bajo virtual (Ample Bass P Lite II) con ajustes predefinidos.              |
+| **Piano**     | Piano acústico (Keyzone Classic) con reverb y splits MIDI.                 |
+| **Organo**    | Sonido de órgano moderno (Surge XT) controlado por modulación MIDI.        |
 
----
-
-## ⚠️ Recomendaciones Clave
-1. **Primer uso**:
-   - Verifica que los plugins estén cargados (menú `FX` en cada canal).
-   - Si falta alguno, REAPER sugerirá reemplazarlo automáticamente.
-
-2. **Seguridad**:
-   - Usa el archivo `Proyecto_Backup.RPP` como respaldo.
-
-3. **Portabilidad**:
-   - Funciona desde USB (actualiza las rutas de plugins si cambias de computadora).
+### Configuración MIDI
+- **Canal 1**: Piano con release largo + reverb (ideal para baladas).
+- **Canal 2**: Piano + pad coral (para rellenar armonías).
+- **Canal 3**: Bajo (C1-E3) + piano con release corto (para ritmos rápidos).
+- **Canal 4**: Bajo + sintetizador tipo órgano (control de volumen vía modulación MIDI).
+- **Canal 5**: Mezcla de bajo, piano corto y órgano (para capas complejas).
 
 ---
 
@@ -73,7 +69,7 @@ Plantilla preconfigurada para **REAPER** optimizada para música en vivo (worshi
 | Problema               | Solución                                                                 |
 |------------------------|--------------------------------------------------------------------------|
 | **Plugins no detectados** | Revisa `Opciones > Preferencias > Plugins > VST` y añade `Reaper\Plugins\FX\UserPlugins` manualmente. |
-| **Ruido/feedback**      | Mantén el volumen de entrada en Windows ≤50% y ajusta ganancia en REAPER. |
+| **Ruido/feedback**      | Mantén el volumen de entrada en Windows ≤10% recomendablemente 1% y ajusta ganancia en REAPER SOLO SI EN CASO DE SER NECESARIO. |
 | **Latencia alta**       | Usa ASIO4ALL con buffer ≤256 muestras. Cierra navegadores/antivirus.     |
 
 ---
